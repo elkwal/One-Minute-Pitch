@@ -5,3 +5,4 @@ It has
   allow users to vote
   allow user to create a pitch and comment on it
   the user receive a welcoming email
+#### Built by **{Sylvia Elukwal}**
