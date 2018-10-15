@@ -6,3 +6,9 @@ It has
   allow user to create a pitch and comment on it
   the user receive a welcoming email
 #### Built by **{Sylvia Elukwal}**
+## Setup/Installation Requirements
+*  `git clone https://github.com/elkwal/One-Minute-Pitch.git`
+*   `Create a virtual environment`
+* `Install all the requirements`
+*  `atom .`
+* `run localhost`
