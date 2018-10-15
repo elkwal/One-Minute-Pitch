@@ -12,3 +12,13 @@ It has
 * `Install all the requirements`
 *  `atom .`
 * `run localhost`
+
+## Known Bugs
+No known bugs
+## Technologies Used
+Python3.7
+Flask Framework
+Bootstrap
+Html
+Css
+SQL
