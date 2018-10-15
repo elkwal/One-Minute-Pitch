@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+{% block styles%}
+{{ super() }}
+
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+ {% endblock %}
+
+{% block content %}
+<div class="container" <div class="row" style="text-align:center; font-size:30px;">
+  <span style="font-size:40px; san-Serif: cursive;">ONE MINUTE PITCH</span>
+
+
+
+<a href="{{url_for('main.pick_up_line')}}" style="sans-Serif cursive; font-size:25px;">
+                        <br>
+                        Pick Up Lines
+                    </a>
+<br>
+<a href="{{url_for('main.promotion')}}" style="san-Serif cursive; font-size:25px;">
+                        <br>
+                        Promotion Pitches
+                    </a>
+<br>
+<a href="{{url_for('main.product')}}" style="san-Serif cursive; font-size:25px;">
+                        <br>
+                        Product Pitches
+                    </a>
+<br>
+
+
+
+<p>Write your one minute pitch in any of the categories above</p>
+
+<div style="text-align:center;">
+  <a href="{{url_for('main.new_pitch')}}">
+                        <br>
+                        <span >Add a new Pitch</span>
+                    </a>
+
+</div>
+
+
+
+
+
+<div class="all-pitches">
+  <hr> {{macro.displayPitches(pitches)}}
+
+
+</div>
+
+</div>
+
+
+{% endblock %}
