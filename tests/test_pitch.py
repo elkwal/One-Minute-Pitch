@@ -2,6 +2,7 @@ import unittest
 from app.models import Pitch
 Pitch = Pitch
 
+
 class PitchTest(unittest.TestCase):
     '''
     Test Class to test the behaviour of the Pitch class
