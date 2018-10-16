@@ -184,14 +184,6 @@ def view_comments(id):
     return render_template('view_comments.html',comments = comments, id=id)
 
 
-# @main.route('/like/<pitch_id>')
-# def like (pitch_id):
-#     print('% liked' % pitch_id)
-
-
-# @main.route('/dislike/<pitch_id>')
-# def dislike(pitch_id):
-#     print('% disliked' % pitch_id)
 
 
 @main.route('/test/<int:id>')

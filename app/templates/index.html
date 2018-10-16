@@ -1,56 +1,45 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
-{% block styles%}
-{{ super() }}
+{% extends 'base.html'%} {% import 'macros.html' as macro%} {% block styles%} {{ super() }}
 
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
- {% endblock %}
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> {% endblock %} {% block content %}
 
-{% block content %}
-<div class="container" <div class="row" style="text-align:center; font-size:30px;">
-  <span style="font-size:40px; san-Serif: cursive;">ONE MINUTE PITCH</span>
+  <div class="jumbotron">
+    <h1 style="text-align:center;">PITCH APP</h1>
+  </div>
 
+<div class="container" style="background-color: powederblue">
 
-
-<a href="{{url_for('main.pick_up_line')}}" style="sans-Serif cursive; font-size:25px;">
-                        <br>
-                        Pick Up Lines
-                    </a>
-<br>
-<a href="{{url_for('main.promotion')}}" style="san-Serif cursive; font-size:25px;">
-                        <br>
-                        Promotion Pitches
-                    </a>
-<br>
-<a href="{{url_for('main.product')}}" style="san-Serif cursive; font-size:25px;">
-                        <br>
-                        Product Pitches
-                    </a>
-<br>
-
-
-
-<p>Write your one minute pitch in any of the categories above</p>
-
-<div style="text-align:center;">
-  <a href="{{url_for('main.new_pitch')}}">
-                        <br>
-                        <span >Add a new Pitch</span>
-                    </a>
-
-</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 well" style="text-align:center;font-family: serif;">
+        <a href="{{url_for('main.pick_up_line')}}">Pick_Up_Lines</a>
+      </div>
+      <div class="col-md-12 well" style="text-align:center;font-family:serif;">
+        <a href="{{url_for('main.promotion')}}"> Promotion Pitches</a>
+      </div>
+      <div class="col-md-12 well" style="text-align:center;font-family: serif;">
+        <a href="{{url_for('main.product')}}"> Product Pitches </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class"col-md-4 well" style="text-align:center;">
+        <a href="{{url_for('main.new_pitch')}}"> Add a new pitch </a>
+      </div>
+    </div>
 
 
 
 
 
-<div class="all-pitches">
-  <hr> {{macro.displayPitches(pitches)}}
+    <div class="all-pitches">
+      <hr> {{macro.displayPitches(pitches)}}
+      <br>
+      <br>
+    </div>
+
+  </div>
 
 
-</div>
-
-</div>
-
-
-{% endblock %}
+  {% endblock %}

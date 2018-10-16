@@ -1,20 +1,18 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
+{% extends 'base.html'%} {% import 'macros.html' as macro%} {% block content %}
 
-{% block content %}
-
-    <div class="container">
-        <h3>Product Pitches</h3>
-        <a href="{{url_for('main.new_pitch')}}">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" "well">
+      <h3>Product Pitches</h3>
+      <a href="{{url_for('main.new_pitch')}}">
             <br>
             ADD A NEW PITCH
         </a>
 
-        <hr>
-
-            {{macro.displayPitchesInCategories(pitches,4)}}
-        <hr>
-
+      <hr> {{macro.displayPitchesInCategories(pitches,4)}}
+      <hr>
     </div>
+  </div>
+</div>
 
 {% endblock %}

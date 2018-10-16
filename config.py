@@ -1,5 +1,6 @@
 import os
 
+
 class Config:
     '''
     General configuration parent class
@@ -29,6 +30,7 @@ class Config:
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
 
+
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:21336622@localhost/pitch_test'
 
@@ -39,7 +41,7 @@ class ProdConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+
 
 class DevConfig(Config):
     '''
@@ -49,6 +51,7 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
 
 config_options = {
     'development': DevConfig,
